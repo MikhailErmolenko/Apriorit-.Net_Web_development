@@ -1,0 +1,22 @@
+﻿@model  IEnumerable<TodoItem>
+
+@{
+    ViewData["Title"] = "To Do list";
+}
+
+<div class="page-wrapper">
+    <div class="todo-now">
+        <input type="text" id="todoNow" placeholder="For example: Become a developer"/>
+        <button class="btn btn-success" onclick="sendTodo()" value="sednd">Send todo</button>
+    </div>
+
+    <br />
+
+    <h2>ToDo List:</h2>
+    <div class="todo-list">
+        @foreach (var item in Model)
+        {
+            <partial name="_ToDoItem" model="item" />
+        }
+    </div>
+</div>

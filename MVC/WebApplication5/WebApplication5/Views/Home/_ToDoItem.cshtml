@@ -1,0 +1,7 @@
+﻿@model TodoItem
+
+
+<div class="todo-list-item shown" id="item_@(Model.Id)">
+    <input type="checkbox" onchange="remove(@Model.Id)"/>
+    <span>@Model.Text</span>
+</div>
