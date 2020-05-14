@@ -1,0 +1,114 @@
+$green: #0fa723;
+$orange: #f87102;
+$darkGreen: #0b6617;
+$darkOrange: #d86100;
+
+body {
+    margin-top: 50px;
+    position: relative;
+    /* required */
+}
+
+.carousel-control.right {
+    background-image: none;
+}
+
+.carousel-control.left {
+    background-image: none;
+}
+
+.indicator {
+    border-radius: 0px;
+    width: 35px;
+    height: 3px;
+    border: 0px;
+    margin: 1px;
+    background-color: #c0c0c0a1;
+    box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-indicators .active {
+    border-radius: 0px;
+    width: 35px;
+    height: 3px;
+    border: 0px;
+    margin: 1px;
+    background-color: white;
+}
+
+.noBorder {
+    border: none;
+}
+
+.phone {
+    margin: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+body[data-theme="green"] .phone {
+    box-shadow: 0px 0px 7px 1px $green;
+}
+
+body[data-theme="orange"] .phone {
+    box-shadow: 0px 0px 7px 1px $orange;
+}
+
+
+.phoneTitle {
+    font-size: 15pt;
+    margin-top: 20px;
+    font-weight: 600;
+    height: 60px;
+}
+
+.phoneCost {
+    font-size: 15pt;
+    margin-top: 20px;
+    font-weight: 600;
+    margin-right: 30px;
+}
+
+.glyphicon {
+    margin-right: 10px;
+}
+
+#contact {
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+
+.btn-primary {
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+body[data-theme="orange"] .btn-primary {
+    background-color: $orange;
+    border-color: $darkOrange;
+}
+
+body[data-theme="green"] .btn-primary {
+    background-color: $green;
+    border-color: $darkGreen;
+}
+
+footer {
+    height: 60px;
+    background-color: $green;
+    -webkit-transition: .4s;
+    transition: .4s;
+    color: black;
+    font-size: 12pt;
+    padding-top: 15px;
+}
+
+body[data-theme="green"] footer {
+    background-color: $green;
+}
+
+body[data-theme="orange"] footer {
+    background-color: $orange;
+}
